@@ -1,4 +1,4 @@
-﻿using Horadagua.Pages;
+﻿using Horadagua.Paginas;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
