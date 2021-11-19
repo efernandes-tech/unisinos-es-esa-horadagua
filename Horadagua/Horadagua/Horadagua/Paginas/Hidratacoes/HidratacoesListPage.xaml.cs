@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Horadagua.Dal;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace Horadagua.Paginas.Hidratacoes
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HidratacoesListPage : ContentPage
     {
+        private HidratacaoDAL dalHidratacao = new HidratacaoDAL();
+
         public HidratacoesListPage()
         {
             InitializeComponent();
@@ -28,7 +31,7 @@ namespace Horadagua.Paginas.Hidratacoes
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            lvHidratacoes.ItemsSource = dalTipoItemCardapio.GetAll();
+            lvHidratacoes.ItemsSource = dalHidratacao.GetAll();
         }
     }
 }

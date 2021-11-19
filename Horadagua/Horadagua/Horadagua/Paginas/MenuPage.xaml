@@ -4,7 +4,14 @@
              x:Class="Horadagua.Paginas.MenuPage">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center">
-            <Button Text="Minha Hidratacao" Image="icon_hydration.png" Clicked="HidratacoesOnClicked"/>
+            <Image Source="icon_horadagua.png" WidthRequest="250"/>
+            <Label HorizontalOptions="Center" FontSize="50" Margin="0, 0, 0, 50">
+                Horadagua
+            </Label>
+            <Button Text="Registrar Hidratação" Image="icon_hydration.png" Clicked="MinhaHidratacaoOnClicked"/>
+            <Button Text="Configurar Lembretes" Image="icon_hydration.png" Clicked="MinhaHidratacaoOnClicked"/>
+            <Button Text="Minha Hidratação" Image="icon_hydration.png" Clicked="MinhaHidratacaoOnClicked"/>
+            <Button Text="Participar de Pesquisa" Image="icon_hydration.png" Clicked="ParticiparPesquisaOnClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
